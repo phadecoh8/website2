@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Project One",
+        "description": "A web application built with HTML, CSS",
+        "image": "assets/images/project.png",
+        "category": "E-commerce",
+        "url": "https://phadecoh8.github.io/connecthubwebsite/"
+    },
+    {
+        "name": "Project Two",
+        "description": "A web application built with HTML, CSS",
+        "image": "assets/images/default.png",
+        "category": "E-commerce"
+    },
+    {
+        "name": "Project Three",
+        "description": "A web application built with HTML, CSS",
+        "image": "assets/images/default.png",
+        "category": "Data"
+    },
+    {
+        "name": "Project Four",
+        "description": "A web application built with HTML, CSS",
+        "image": "assets/images/default.png",
+        "category": "Web Apps"
+    },
+    {
+        "name": "Project Five",
+        "description": "A web application built with HTML, CSS",
+        "image": "assets/images/default.png",
+        "category": "Data"
+    }
+]

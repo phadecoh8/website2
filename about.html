@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"">
+    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="project.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section class="container py-5">
+        <h1 class="">About Me</h1>
+        <p class="lead">Frontend Developer | Backend Developer | Tech Advocate</p>
+        <p>
+            Hello! I'm <span style="font-weight: 600;">Fadero Joshua</span>, a passionate developer with experience in
+            building dynamic and
+            responsive web applications. I love coding and am always eager to learn new technologies and improve my
+            skills. In my free time, I enjoy contributing to open-source projects and exploring the latest trends in web
+            development. I also like attending tech meetups, reading about software architecture, and collaborating
+            with other developers on innovative ideas. When I'm not coding, I enjoy hiking, photography, and
+            discovering new music.
+        </p>
+
+        <div class="what-i-do">
+            <h1>
+                What I Do!
+            </h1>
+            <div class="what-i-do-container row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="p-3 h-100">
+                        <img src="images/coding-man.jpg" alt="web development" class="img-fluid w-100"
+                            style="height:200px; object-fit:cover;">
+                        <h3 class="mt-3">Web Development</h3>
+                        <p>
+                            As a developer, I find myself most captivated by the power and flexibility of NEXT.js.
+                            I'm always eager to dive into new projects that leverage NEXT.js and discover innovative
+                            ways to create fast, scalable, and user-friendly applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="p-3 h-100">
+                        <img src="images/mentorship.png" alt="Mentorship" class="img-fluid w-100"
+                            style="height:200px; object-fit:cover;">
+                        <h3 class="mt-3">Mentorship</h3>
+                        <p>
+                            I have also found great joy in sharing my knowledge with others. Being a technical mentor
+                            allows
+                            me to give back to the community that has supported me throughout my career.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="p-3 h-100">
+                        <img src="images/download.jpg" alt="Graphic Design" class="img-fluid w-100"
+                            style="height:200px; object-fit:cover;">
+                        <h3 class="mt-3">Graphic Design</h3>
+                        <p>
+                            In addition to my development skills, I have a strong background in graphic design.
+                            I enjoy creating visually appealing and user-friendly interfaces that enhance the
+                            overall user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="project.html" class="btn btn-primary">View my Projects</a> -->
+        <div id="next-page"></div>
+        <div id="pre-page"></div>
+    </section>
+
+    <footer>
+        <div class=" text-center p-3 bg-dark text-white" class="mt-5" style="position: fixed; bottom: 0; width: 100%;">
+            &copy; 2024 Fadero Joshua.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const nextPage = document.getElementById('next-page');
+        const previousPage = document.getElementById('pre-page');
+
+        previousPage.addEventListener("click", () => {
+            window.location.href = "index.html"
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === 'ArrowLeft') {
+                previousPage.click();
+            } else {
+                event.preventDefault();
+            }
+        });
+
+        nextPage.addEventListener('click', () => {
+            window.location.href = 'project.html';
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                nextPage.click();
+            } else {
+                preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
